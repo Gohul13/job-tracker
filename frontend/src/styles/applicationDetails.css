@@ -1,0 +1,381 @@
+/* =========================
+   Back Button
+========================= */
+
+.back-button {
+  border: none;
+  background: transparent;
+
+  color: #4f46e5;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-bottom: 24px;
+}
+
+.back-button:hover {
+  color: #4338ca;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.details-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 24px;
+}
+
+.details-header h1 {
+  font-size: 28px;
+
+  margin-bottom: 6px;
+}
+
+.details-header p {
+  color: #6b7280;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   Error
+========================= */
+
+.details-error {
+  background: #fef2f2;
+
+  color: #dc2626;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 8px;
+
+  padding: 12px 14px;
+
+  margin-bottom: 20px;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   Details Card
+========================= */
+
+.details-card {
+  max-width: 900px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   Details Grid
+========================= */
+
+.details-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.detail-item {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  padding: 20px;
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-label {
+  font-size: 12px;
+
+  font-weight: 600;
+
+  color: #6b7280;
+
+  text-transform: uppercase;
+}
+
+.detail-value {
+  font-size: 14px;
+
+  color: #111827;
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   Notes
+========================= */
+
+.notes-section {
+  padding: 20px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.notes-section p {
+  margin-top: 8px;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   Actions
+========================= */
+
+.details-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  padding: 20px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.edit-button {
+  border: none;
+
+  background: #4f46e5;
+
+  color: white;
+}
+
+.edit-button:hover {
+  background: #4338ca;
+}
+
+.delete-button {
+  border: 1px solid #fecaca;
+
+  background: white;
+
+  color: #dc2626;
+}
+
+.delete-button:hover {
+  background: #fef2f2;
+}
+
+
+/* =========================
+   Delete Modal
+========================= */
+
+.modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  z-index: 1000;
+}
+
+.delete-modal {
+  width: 100%;
+
+  max-width: 420px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  padding: 24px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.delete-modal h2 {
+  font-size: 20px;
+
+  margin-bottom: 10px;
+}
+
+.delete-modal p {
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  margin-bottom: 24px;
+}
+
+.modal-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+}
+
+.delete-confirm-button {
+  border: none;
+
+  background: #dc2626;
+
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.delete-confirm-button:hover {
+  background: #b91c1c;
+}
+
+.delete-confirm-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 700px) {
+  .details-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .details-actions {
+    flex-direction: column;
+  }
+
+  .edit-button,
+  .delete-button {
+    width: 100%;
+  }
+}
+/* =========================
+   Dark Theme
+========================= */
+
+body.dark-theme .back-button {
+  color: #a5b4fc;
+}
+
+body.dark-theme .back-button:hover {
+  color: #c7d2fe;
+}
+
+body.dark-theme .details-header p {
+  color: #9ca3af;
+}
+
+body.dark-theme .details-card {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+body.dark-theme .detail-label {
+  color: #9ca3af;
+}
+
+body.dark-theme .detail-value {
+  color: #f9fafb;
+}
+
+body.dark-theme .notes-section {
+  border-color: #374151;
+}
+
+body.dark-theme .notes-section p {
+  color: #d1d5db;
+}
+
+body.dark-theme .details-actions {
+  border-color: #374151;
+}
+
+body.dark-theme .delete-button {
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+body.dark-theme .delete-button:hover {
+  background: #991b1b;
+}
+
+body.dark-theme .modal-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+body.dark-theme .delete-modal {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+body.dark-theme .delete-modal p {
+  color: #d1d5db;
+}

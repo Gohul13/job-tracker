@@ -1,0 +1,245 @@
+/* =========================
+   Global
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+
+/* =========================
+   App Layout
+========================= */
+
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-body {
+  display: flex;
+  min-height: calc(100vh - 64px);
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+  padding: 32px;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.app-navbar {
+  height: 64px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+}
+
+.app-brand {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-name {
+  font-size: 14px;
+  color: #374151;
+}
+
+.logout-button {
+  border: none;
+  background: transparent;
+  color: #111827;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-button:hover {
+  color: #4f46e5;
+}
+
+
+/* =========================
+   Sidebar
+========================= */
+
+.app-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+
+  background: white;
+  border-right: 1px solid #e5e7eb;
+
+  padding: 24px 12px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-link {
+  display: block;
+
+  text-decoration: none;
+  color: #374151;
+
+  padding: 11px 14px;
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+.sidebar-link:hover {
+  background: #f3f4f6;
+}
+
+.sidebar-link.active {
+  background: #eef2ff;
+  color: #4f46e5;
+  font-weight: 600;
+}
+/* =========================
+   Dark Theme
+========================= */
+
+body.dark-theme {
+  background: #111827;
+  color: #f9fafb;
+}
+
+body.dark-theme .app-navbar,
+body.dark-theme .app-sidebar,
+body.dark-theme .stat-card,
+body.dark-theme .applications-card,
+body.dark-theme .form-card,
+body.dark-theme .details-card {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+body.dark-theme .user-name,
+body.dark-theme .sidebar-link {
+  color: #d1d5db;
+}
+
+body.dark-theme .sidebar-link:hover {
+  background: #374151;
+}
+
+body.dark-theme .sidebar-link.active {
+  background: #312e81;
+  color: #a5b4fc;
+}
+
+body.dark-theme .page-header p,
+body.dark-theme .section-header p,
+body.dark-theme .stat-label,
+body.dark-theme .application-info p,
+body.dark-theme .application-location {
+  color: #9ca3af;
+}
+.theme-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.theme-button:hover {
+  background: #f3f4f6;
+}
+
+body.dark-theme .theme-button:hover {
+  background: #374151;
+}
+/* =========================
+   Navbar User
+========================= */
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.logout-button {
+  border: none;
+  background: transparent;
+  color: #374151;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 10px;
+  border-radius: 6px;
+}
+
+.logout-button:hover {
+  background: #f3f4f6;
+  color: #4f46e5;
+}
+
+
+/* =========================
+   Dark Theme Navbar
+========================= */
+
+body.dark-theme .user-name {
+  color: #f3f4f6;
+}
+
+body.dark-theme .logout-button {
+  color: #d1d5db;
+}
+
+body.dark-theme .logout-button:hover {
+  background: #374151;
+  color: #a5b4fc;
+}
+/* =========================
+   Applications Dark Theme
+========================= */
+
+body.dark-theme .page-container {
+  color: #f9fafb;
+}
+
+body.dark-theme .applications-header h1 {
+  color: #f9fafb;
+}
+
+body.dark-theme .applications-card {
+  background: #1f2937;
+  border-color: #374151;
+}

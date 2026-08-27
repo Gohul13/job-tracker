@@ -1,0 +1,207 @@
+.auth-register-page {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: #f5f7fb;
+
+  overflow: hidden;
+}
+
+
+.auth-register-card {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Logo */
+
+.auth-register-logo {
+  text-align: center;
+
+  margin-bottom: 24px;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #4f46e5;
+}
+
+
+/* Heading */
+
+.auth-register-heading {
+  text-align: center;
+
+  margin-bottom: 26px;
+}
+
+.auth-register-heading h1 {
+  margin: 0 0 8px;
+
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.auth-register-heading p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #6b7280;
+}
+
+
+/* Form */
+
+.auth-register-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+
+/* Fields */
+
+.auth-register-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.auth-register-field label {
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #374151;
+}
+
+.auth-register-field input {
+  width: 100%;
+
+  height: 44px;
+
+  padding: 0 13px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 14px;
+
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-register-field input::placeholder {
+  color: #9ca3af;
+}
+
+.auth-register-field input:focus {
+  border-color: #4f46e5;
+
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+
+/* Button */
+
+.auth-register-button {
+  width: 100%;
+
+  height: 44px;
+
+  margin-top: 5px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #4f46e5;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+.auth-register-button:hover {
+  background: #4338ca;
+}
+
+
+/* Footer */
+
+.auth-register-footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 22px;
+
+  font-size: 14px;
+
+  color: #6b7280;
+}
+
+.auth-register-footer button {
+  border: none;
+
+  padding: 0;
+
+  background: transparent;
+
+  color: #4f46e5;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.auth-register-footer button:hover {
+  text-decoration: underline;
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .auth-register-page {
+    padding: 12px;
+  }
+
+  .auth-register-card {
+    padding: 26px 20px;
+  }
+}
